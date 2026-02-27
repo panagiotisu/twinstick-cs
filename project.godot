@@ -26,10 +26,10 @@ project/assembly_name="Twinstick C#"
 [file_customization]
 
 folder_colors={
-"res://common/": "red",
-"res://scenes/": "orange",
-"res://ui/": "green",
-"res://world/": "blue"
+"res://Common/": "red",
+"res://Scenes/": "orange",
+"res://UI/": "green",
+"res://World/": "blue"
 }
 
 [physics]

@@ -3,7 +3,7 @@ using Godot;
 
 namespace Game.Actors;
 
-[GlobalClass, Icon("player2d.svg")]
+[GlobalClass, Icon("Player2D.svg")]
 public partial class Player2D : CharacterBody2D
 {
     public static Player2D Instance { get; private set; }

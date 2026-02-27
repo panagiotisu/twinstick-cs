@@ -1,19 +1,19 @@
 [gd_scene format=3 uid="uid://bsxgwry1rnn30"]
 
-[ext_resource type="Script" uid="uid://3ckyk4wl0pli" path="res://scenes/actors/player/Player2D.cs" id="1_ixf4t"]
-[ext_resource type="Texture2D" uid="uid://bbek2l73hyuhw" path="res://scenes/actors/player/player.png" id="2_m5pc6"]
+[ext_resource type="Script" uid="uid://3ckyk4wl0pli" path="res://Scenes/Actors/Player/Player2D.cs" id="1_c0sb3"]
+[ext_resource type="Texture2D" uid="uid://bbek2l73hyuhw" path="res://Scenes/Actors/Player/Player.png" id="2_sajox"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_m5pc6"]
 radius = 4.0
 
 [node name="Player2D" type="CharacterBody2D" unique_id=972417014]
-script = ExtResource("1_ixf4t")
+script = ExtResource("1_c0sb3")
 metadata/_custom_type_script = "uid://3ckyk4wl0pli"
 
 [node name="Visuals" type="Node2D" parent="." unique_id=749928177]
 
 [node name="Body" type="Sprite2D" parent="Visuals" unique_id=2137081387]
-texture = ExtResource("2_m5pc6")
+texture = ExtResource("2_sajox")
 hframes = 36
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=541118347]

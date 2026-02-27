@@ -5,7 +5,7 @@ using Game.Globals;
 
 namespace Game.Components;
 
-[GlobalClass, Icon("animation_director.svg")]
+[GlobalClass, Icon("AnimationDirector.svg")]
 public partial class AnimationDirector : Node
 {
     private enum Cardinal
