@@ -57,7 +57,8 @@ public partial class AnimationDirector : Node
     {
         Debug.Assert(
             !animation.ToString().Contains(Delimiter),
-            "Directionless animation names should never contain the special delimiter '" + Delimiter + "'."
+            "Directionless animation names should never contain " +
+            $"the special delimiter {Delimiter}."
         );
 
         _animationPlayer.Play(animation);
@@ -66,6 +67,11 @@ public partial class AnimationDirector : Node
     public void Play(StringName animationState, Vector2 faceDirection)
     {
         HandleFlipping(faceDirection);
+
+        Cardinal cardinal = CardinalFromVector(faceDirection);
+        StringName directionalAnimation = _directionalAnimationMap[(animationState, cardinal)];
+        
+        _animationPlayer.Play(directionalAnimation);
     }
 
     private void PopulateDirectionalAnimationMap()
