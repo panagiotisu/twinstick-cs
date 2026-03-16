@@ -35,7 +35,7 @@ public partial class AnimationDirector : Node
 
     [Export] private Node2D _visuals;
 
-    private const string Delimiter = ".";
+    private const string Delimiter = "/";
 
     private Dictionary<(StringName, Cardinal), StringName> _directionalAnimationMap = [];
     private readonly Dictionary<StringName, Cardinal> _stringToCardinal = new()
