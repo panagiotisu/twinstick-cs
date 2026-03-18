@@ -69,9 +69,11 @@ public partial class AnimationDirector : Node
         HandleFlipping(faceDirection);
 
         Cardinal cardinal = CardinalFromVector(faceDirection);
-        StringName directionalAnimation = _directionalAnimationMap[(animationState, cardinal)];
-        
-        _animationPlayer.Play(directionalAnimation);
+
+        if (_directionalAnimationMap.TryGetValue((animationState, cardinal), out var directionalAnimation))
+        {
+            _animationPlayer.Play(directionalAnimation);
+        }
     }
 
     private void PopulateDirectionalAnimationMap()
