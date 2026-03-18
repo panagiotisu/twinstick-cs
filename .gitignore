@@ -20,3 +20,7 @@ mono_crash.*.json
 
 # Jetbrains ignores
 .idea/
+
+# .NET ignores
+*.csproj
+*.csproj.old
