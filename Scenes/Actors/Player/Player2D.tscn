@@ -265,8 +265,11 @@ libraries/dashing = SubResource("AnimationLibrary_kvlxm")
 libraries/idle = SubResource("AnimationLibrary_qek5x")
 libraries/walking = SubResource("AnimationLibrary_gx1jg")
 
-[node name="AnimationDirector" type="Node" parent="." unique_id=587163272]
+[node name="AnimationDirector" type="Node" parent="." unique_id=587163272 node_paths=PackedStringArray("_animationPlayer", "_visuals")]
 script = ExtResource("3_sajox")
+_animationPlayer = NodePath("../AnimationPlayer")
+_visuals = NodePath("../Visuals")
+_facingPattern = 3
 metadata/_custom_type_script = "uid://cpitgcqq53ycv"
 
 [node name="Accelerator" type="Node" parent="." unique_id=1980045932]

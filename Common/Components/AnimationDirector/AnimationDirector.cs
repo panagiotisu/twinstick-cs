@@ -27,13 +27,10 @@ public partial class AnimationDirector : Node
         Octagon,
     }
 
-    [ExportGroup(GlobalStrings.ExportGroupNames.Properties)]
-    [Export] private FacingPattern _facingPattern = FacingPattern.Linear;
-
-    [ExportGroup(GlobalStrings.ExportGroupNames.Components)]
     [Export] private AnimationPlayer _animationPlayer;
-
     [Export] private Node2D _visuals;
+    
+    [Export] private FacingPattern _facingPattern = FacingPattern.Linear;
 
     private const string Delimiter = "/";
 
