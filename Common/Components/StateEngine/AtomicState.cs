@@ -23,7 +23,7 @@ public partial class AtomicState : State
 		List<string> warnings = [];
 		warnings.AddRange(base._GetConfigurationWarnings());
 
-		if (this.GetChildCount<State>() == 0)
+		if (this.GetChildCount<State>() > 0)
 		{
 			warnings.Add(
 				$"{typeof(AtomicState).Name} cannot have children substates."
