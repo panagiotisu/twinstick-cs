@@ -12,7 +12,8 @@ public partial class Player2D : CharacterBody2D
     {
         Debug.Assert(
             Instance == null || Instance == this,
-            "There should be at most one Player2D object in the game at all times."
+            $"There should be at most one {typeof(Player2D).Name} " +
+            "object in the game at all times."
         );
 
         Instance = this;
