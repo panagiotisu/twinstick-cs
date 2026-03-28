@@ -1,8 +1,10 @@
 [gd_scene format=3 uid="uid://bsxgwry1rnn30"]
 
 [ext_resource type="Script" uid="uid://3ckyk4wl0pli" path="res://Scenes/Actors/Player/Player2D.cs" id="1_c0sb3"]
-[ext_resource type="Texture2D" uid="uid://bbek2l73hyuhw" path="res://Scenes/Actors/Player/Player.png" id="2_sajox"]
+[ext_resource type="Texture2D" uid="uid://d2sa28aqb0t78" path="res://Scenes/Actors/Player/Player.png" id="2_sajox"]
 [ext_resource type="Script" uid="uid://cpitgcqq53ycv" path="res://Common/Components/AnimationDirector/AnimationDirector.cs" id="3_sajox"]
+[ext_resource type="Script" uid="uid://cnxig22iv4yn3" path="res://Common/Components/Accelerator/Accelerator.cs" id="4_qramg"]
+[ext_resource type="Resource" uid="uid://vla5esa0dvb2" path="res://Scenes/Actors/Player/PlayerAccelerationStats.tres" id="5_het1q"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_m5pc6"]
 radius = 4.0
@@ -26,3 +28,8 @@ shape = SubResource("CircleShape2D_m5pc6")
 [node name="AnimationDirector" type="Node" parent="." unique_id=587163272]
 script = ExtResource("3_sajox")
 metadata/_custom_type_script = "uid://cpitgcqq53ycv"
+
+[node name="Accelerator" type="Node" parent="." unique_id=1980045932]
+script = ExtResource("4_qramg")
+_stats = ExtResource("5_het1q")
+metadata/_custom_type_script = "uid://cnxig22iv4yn3"

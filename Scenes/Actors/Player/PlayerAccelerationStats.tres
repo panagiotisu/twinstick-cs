@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="AcceleratorStats" format=3 uid="uid://vla5esa0dvb2"]
+
+[ext_resource type="Script" uid="uid://df5klyxb0prpo" path="res://Common/Components/Accelerator/AcceleratorStats.cs" id="1_eohf5"]
+
+[resource]
+script = ExtResource("1_eohf5")
+metadata/_custom_type_script = "uid://df5klyxb0prpo"

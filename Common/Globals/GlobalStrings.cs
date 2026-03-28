@@ -29,6 +29,7 @@ public static class GlobalStrings
     {
         public const string Components = "Components";
         public const string Properties = "Properties";
+        public const string Stats = "Stats";
         public const string NeighboringStates = "Neighboring States";
     }
 }
